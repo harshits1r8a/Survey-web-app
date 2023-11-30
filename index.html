@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Application | CODE inbound</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="survey-container">
+        <!--Welcome screen -->
+        <div id="welcome-screen" class="screen">
+            <h1 id="heading">Welcome to Our Shop!</h1>
+            <button class="btn" id="start-btn">Start</button>
+        </div>
+        
+        <!-- Question screen -->
+        <div id="question-screen" class="screen">
+            <h1 id="heading">Customer Survey</h1>
+            <h6 class="questionNo"></h6>
+            <div class="questions" id="question-box">
+                <!-- <p class='q-style'>How satisfied are you with our products?</p>
+                <div class="rating-box">
+                    <button class="rating-no">1</button>
+                    <button class="rating-no">1</button>
+                    <button class="rating-no">1</button>
+                    <button class="rating-no">1</button>
+                    <button class="rating-no">1</button>
+                </div> -->
+            </div>
+            <button id="prev-btn" class="btn">Previous</button>
+            <button id="next-btn" class="btn">Next</button>
+            <button id="skip-btn" class="btn">Skip</button>
+        </div>
+
+        <!-- Cofirmation Screen -->
+        <div id="confirmation-screen" class="screen">
+            <h1 id="heading">Are you sure you want to submit the survey?</h1>
+            <button class="btn" id="sub-yes">Yes</button>
+            <button class="btn" id="sub-no">No</button>
+        </div>
+
+        <!-- thank you screen -->
+        <div id="thank-screen" class="screen">
+            <h1 id="heading">Thank you for your time!</h1>
+        </div>
+
+    </div>
+</body>
+</html>
