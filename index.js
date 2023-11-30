@@ -111,15 +111,15 @@ function nextQuestion() {
         const options = document.querySelectorAll('.rating-no')
         options.forEach((elm) => {
             if (elm.classList.contains('rating-visited')) {
-                console.log(elm.value);
+                // console.log(elm.value);
                 answer[currentIndex + 1] = elm.value
             }
         })
     }else{
         answer[currentIndex + 1] = answerInput.value
     }
-    console.log(answerInput);
-    console.log(answer);
+    // console.log(answerInput);
+    // console.log(answer);
     currentIndex++
     displayQuestion()
 }
